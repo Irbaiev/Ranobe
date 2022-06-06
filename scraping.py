@@ -19,7 +19,7 @@ def get_source_html(url):
     options = webdriver.ChromeOptions()
     options.add_argument(f"user-agent={useragent.random}")
 
-    driver = webdriver.Chrome(executable_path='/home/irbaiev1/Python/Ranobe/selenium/chromedriver', options=options)
+    driver = webdriver.Chrome(executable_path='./chromedriver', options=options)
 
     driver.maximize_window()
 
@@ -74,10 +74,10 @@ def get_content(file_path):
         for urls in urls_list:
             useragent = UserAgent()
 
-            options = webdriver.FirefoxOptions()
-            options.set_preference("general.useragent.override", useragent.random)
+            options = webdriver.ChromeOptions()
+            options.add_argument(f"user-agent={useragent.random}")
 
-            driver = webdriver.Firefox(executable_path='./geckodriver', options=options)
+            driver = webdriver.Chrome(executable_path='./chromedriver', options=options)
 
 
             try:
