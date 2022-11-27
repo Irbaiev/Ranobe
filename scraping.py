@@ -7,11 +7,6 @@ import random
 import time 
 
 
-# Ccылка тайтла!
-
-
-
-
 
 def get_source_html(url):
     # Парсер html разметки страницы с ссылками!
@@ -117,9 +112,9 @@ def get_content(file_path):
 
 # get_source_html и get_url используются для получения ссылок глав!
 def main():
-    # get_source_html(input('Введите ссылку: '))
+    get_source_html(input('Введите ссылку: '))
     # get_url(file_path='./ranobe_url.html')
-    get_content(file_path='./urls.txt')
+    # get_content(file_path='./urls.txt')
 
 
 if __name__ == '__main__':
