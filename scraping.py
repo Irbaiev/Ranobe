@@ -6,8 +6,6 @@ import re
 import random
 import time 
 
-
-
 def get_source_html(url):
     # Парсер html разметки страницы с ссылками!
     useragent = UserAgent()
@@ -37,8 +35,6 @@ def get_source_html(url):
     finally:
         driver.close()
         driver.quit()
-
-
 
 
 
